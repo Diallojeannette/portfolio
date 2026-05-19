@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jeannette Diallo — Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <!-- ░░ SCROLL RESET — force top on every page load ░░ -->
+        <script>
+            history.scrollRestoration = "manual";
+            window.scrollTo(0, 0);
+        </script>
+    </head>
+    <body>
+        <!-- ░░ NAV ░░ -->
+        <header class="nav-wrapper">
+            <nav class="nav">
+                <a href="#hero" class="nav-logo">JD</a>
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav.about"></a></li>
+                    <li><a href="#exp" data-i18n="nav.exp"></a></li>
+                    <li><a href="#edu" data-i18n="nav.edu"></a></li>
+                    <li><a href="#skills" data-i18n="nav.skills"></a></li>
+                    <li><a href="#contact" data-i18n="nav.contact"></a></li>
+                </ul>
+                <button
+                    class="lang-toggle"
+                    id="langBtn"
+                    aria-label="Switch language"
+                >
+                    <span class="lang-icon">🌐</span>
+                    <span id="langLabel">EN</span>
+                </button>
+                <button
+                    class="hamburger"
+                    id="hamburger"
+                    aria-label="Menu"
+                    aria-expanded="false"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- ░░ MOBILE MENU ░░ -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li>
+                    <a
+                        href="#about"
+                        data-i18n="nav.about"
+                        class="mobile-link"
+                    ></a>
+                </li>
+                <li>
+                    <a href="#exp" data-i18n="nav.exp" class="mobile-link"></a>
+                </li>
+                <li>
+                    <a href="#edu" data-i18n="nav.edu" class="mobile-link"></a>
+                </li>
+                <li>
+                    <a
+                        href="#skills"
+                        data-i18n="nav.skills"
+                        class="mobile-link"
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="#contact"
+                        data-i18n="nav.contact"
+                        class="mobile-link"
+                    ></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ░░ SCROLL TO TOP ░░ -->
+        <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
+
+        <main>
+            <!-- ░░ HERO ░░ -->
+            <section id="hero" class="hero">
+                <div class="hero-grid" aria-hidden="true"></div>
+                <div class="hero-bg-text" aria-hidden="true">DEV</div>
+                <div class="hero-content">
+                    <p class="hero-eyebrow" data-i18n="hero.eyebrow"></p>
+                    <h1 class="hero-name">
+                        Jeannette<br /><span>Diallo</span>
+                    </h1>
+                    <p class="hero-title" data-i18n="hero.title"></p>
+                    <div class="hero-actions">
+                        <a
+                            href="#exp"
+                            class="btn btn-primary"
+                            data-i18n="hero.cta"
+                        ></a>
+                        <a
+                            href="#contact"
+                            class="btn btn-outline"
+                            data-i18n="hero.contact"
+                        ></a>
+                    </div>
+                </div>
+                <div class="hero-scroll-hint" aria-hidden="true">
+                    <span></span>
+                </div>
+            </section>
+
+            <!-- ░░ ABOUT ░░ -->
+            <section id="about" class="section about">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">01</span>
+                        <h2 data-i18n="nav.about"></h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p class="about-lead" data-i18n="about.lead"></p>
+                            <p data-i18n="about.body"></p>
+                        </div>
+                        <div class="about-aside">
+                            <div class="info-card">
+                                <div class="info-item">
+                                    <span
+                                        class="info-label"
+                                        data-i18n="about.location"
+                                    ></span>
+                                    <span data-i18n="contact.location"></span>
+                                </div>
+                                <div class="info-item">
+                                    <span
+                                        class="info-label"
+                                        data-i18n="about.phone"
+                                    ></span>
+                                    <span>+224 612 58 68 95</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Email</span>
+                                    <span>diallojeannette.pro@gmail.com</span>
+                                </div>
+                                <div class="info-item">
+                                    <span
+                                        class="info-label"
+                                        data-i18n="about.languages"
+                                    ></span>
+                                    <span data-i18n="about.langVal"></span>
+                                </div>
+                            </div>
+
+                            <!-- Centres d'intérêt avec hover emoji -->
+                            <div class="interests">
+                                <span data-i18n="about.interests"></span>
+                                <div class="tags">
+                                    <span class="tag-interest">
+                                        <span
+                                            class="tag-label"
+                                            data-i18n="int.reading"
+                                        ></span>
+                                        <span
+                                            class="tag-emoji"
+                                            aria-hidden="true"
+                                            >📖</span
+                                        >
+                                    </span>
+
+                                    <span class="tag-interest">
+                                        <span class="tag-label">Tennis</span>
+                                        <span
+                                            class="tag-emoji"
+                                            aria-hidden="true"
+                                            >🎾</span
+                                        >
+                                    </span>
+
+                                    <span class="tag-interest">
+                                        <span
+                                            class="tag-label"
+                                            data-i18n="int.hiking"
+                                        ></span>
+                                        <span
+                                            class="tag-emoji"
+                                            aria-hidden="true"
+                                            >🥾</span
+                                        >
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ EXPERIENCE ░░ -->
+            <section id="exp" class="section experience dark-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">02</span>
+                        <h2 data-i18n="nav.exp"></h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-meta">
+                                <span
+                                    class="timeline-date"
+                                    data-i18n="exp.stock.date"
+                                ></span>
+                                <span
+                                    class="timeline-company"
+                                    data-i18n="exp.stock.company"
+                                ></span>
+                            </div>
+                            <div class="timeline-body">
+                                <h3 data-i18n="exp.stock.title"></h3>
+                                <ul>
+                                    <li data-i18n="exp.stock.b1"></li>
+                                    <li data-i18n="exp.stock.b2"></li>
+                                    <li data-i18n="exp.stock.b3"></li>
+                                    <li data-i18n="exp.stock.b4"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-meta">
+                                <span
+                                    class="timeline-date"
+                                    data-i18n="exp.web.date"
+                                ></span>
+                                <span
+                                    class="timeline-company"
+                                    data-i18n="exp.web.company"
+                                ></span>
+                            </div>
+                            <div class="timeline-body">
+                                <h3 data-i18n="exp.web.title"></h3>
+                                <ul>
+                                    <li data-i18n="exp.web.b1"></li>
+                                    <li data-i18n="exp.web.b2"></li>
+                                    <li data-i18n="exp.web.b3"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-meta">
+                                <span
+                                    class="timeline-date"
+                                    data-i18n="exp.pfe.date"
+                                ></span>
+                                <span class="timeline-company"
+                                    >4TechLab, Maroc</span
+                                >
+                            </div>
+                            <div class="timeline-body">
+                                <h3 data-i18n="exp.pfe.title"></h3>
+                                <ul>
+                                    <li data-i18n="exp.pfe.b1"></li>
+                                    <li data-i18n="exp.pfe.b2"></li>
+                                    <li data-i18n="exp.pfe.b3"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-meta">
+                                <span
+                                    class="timeline-date"
+                                    data-i18n="exp.eng.date"
+                                ></span>
+                                <span class="timeline-company"
+                                    >CodingArt, Maroc</span
+                                >
+                            </div>
+                            <div class="timeline-body">
+                                <h3 data-i18n="exp.eng.title"></h3>
+                                <ul>
+                                    <li data-i18n="exp.eng.b1"></li>
+                                    <li data-i18n="exp.eng.b2"></li>
+                                    <li data-i18n="exp.eng.b3"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-meta">
+                                <span
+                                    class="timeline-date"
+                                    data-i18n="exp.tech.date"
+                                ></span>
+                                <span
+                                    class="timeline-company"
+                                    data-i18n="exp.tech.company"
+                                ></span>
+                            </div>
+                            <div class="timeline-body">
+                                <h3 data-i18n="exp.tech.title"></h3>
+                                <ul>
+                                    <li data-i18n="exp.tech.b1"></li>
+                                    <li data-i18n="exp.tech.b2"></li>
+                                    <li data-i18n="exp.tech.b3"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ EDUCATION ░░ -->
+            <section id="edu" class="section education">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">03</span>
+                        <h2 data-i18n="nav.edu"></h2>
+                    </div>
+                    <div class="edu-grid">
+                        <div class="edu-card">
+                            <div class="edu-icon">🎓</div>
+                            <div class="edu-info">
+                                <h3 data-i18n="edu.eng.degree"></h3>
+                                <p data-i18n="edu.eng.school"></p>
+                                <span class="edu-year">2020 – 2023</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-icon">📚</div>
+                            <div class="edu-info">
+                                <h3 data-i18n="edu.prep.degree"></h3>
+                                <p data-i18n="edu.prep.school"></p>
+                                <span class="edu-year">2018 – 2020</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-icon">🗣️</div>
+                            <div class="edu-info">
+                                <h3 data-i18n="edu.english.degree"></h3>
+                                <p data-i18n="edu.english.school"></p>
+                                <span class="edu-year"
+                                    >Sept 2024 – Avr 2025</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-block">
+                        <h3 class="cert-title" data-i18n="edu.certTitle"></h3>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <span class="cert-badge">Coursera</span>
+                                <span data-i18n="cert.react"></span>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-badge">Coursera</span>
+                                <span data-i18n="cert.wireshark"></span>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-badge">Coursera</span>
+                                <span data-i18n="cert.android"></span>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-badge">Coursera</span>
+                                <span data-i18n="cert.bigdata"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ SKILLS ░░ -->
+            <section id="skills" class="section skills dark-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">04</span>
+                        <h2 data-i18n="nav.skills"></h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-group">
+                            <h3 data-i18n="skills.web"></h3>
+                            <div class="skill-tags">
+                                <span>HTML5</span><span>CSS3</span
+                                ><span>JavaScript</span> <span>React.js</span
+                                ><span>Bootstrap</span><span>Tailwind CSS</span>
+                                <span>PHP</span><span>Angular</span
+                                ><span>Nuxt.js</span><span>Symfony</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3 data-i18n="skills.db"></h3>
+                            <div class="skill-tags">
+                                <span>MySQL</span><span>SQL Server</span
+                                ><span>PHPMyAdmin</span> <span>Merise</span
+                                ><span>UML</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3 data-i18n="skills.os"></h3>
+                            <div class="skill-tags">
+                                <span>Linux (Ubuntu)</span><span>Windows</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3 data-i18n="skills.tools"></h3>
+                            <div class="skill-tags">
+                                <span>Notion</span><span>Figma/Wireframing</span
+                                ><span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div
+                            class="project-label"
+                            data-i18n="project.label"
+                        ></div>
+                        <h3 data-i18n="project.title"></h3>
+                        <p data-i18n="project.desc"></p>
+                        <div class="project-tags">
+                            <span data-i18n="project.t1"></span>
+                            <span data-i18n="project.t2"></span>
+                            <span data-i18n="project.t3"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ░░ CONTACT ░░ -->
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">05</span>
+                        <h2 data-i18n="nav.contact"></h2>
+                    </div>
+                    <div class="contact-inner">
+                        <!-- Accroche bilingue -->
+                        <p
+                            class="contact-tagline"
+                            data-i18n="contact.tagline"
+                        ></p>
+
+                        <!-- Grille de coordonnées -->
+                        <div class="contact-cards">
+                            <a href="tel:+22461258695" class="contact-card">
+                                <div class="contact-card-icon">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.7 12.1 19.79 19.79 0 0 1 1.58 3.5 2 2 0 0 1 3.55 1.33h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.89a16 16 0 0 0 6.29 6.29l.89-.89a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span
+                                        class="contact-card-label"
+                                        data-i18n="about.phone"
+                                    ></span>
+                                    <p>+224 612 58 68 95</p>
+                                </div>
+                            </a>
+
+                            <a
+                                href="mailto:diallojeannette.pro@gmail.com"
+                                class="contact-card"
+                            >
+                                <div class="contact-card-icon">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <rect
+                                            x="2"
+                                            y="4"
+                                            width="20"
+                                            height="16"
+                                            rx="2"
+                                        />
+                                        <path
+                                            d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span class="contact-card-label"
+                                        >Email</span
+                                    >
+                                    <p>diallojeannette.pro@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <div class="contact-card contact-card--static">
+                                <div class="contact-card-icon">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"
+                                        />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span
+                                        class="contact-card-label"
+                                        data-i18n="about.location"
+                                    ></span>
+                                    <p data-i18n="contact.location"></p>
+                                </div>
+                            </div>
+
+                            <a
+                                href="https://linkedin.com/in/jeannette-diallo-a3719025a"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-card contact-card--linkedin"
+                            >
+                                <div class="contact-card-icon">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                        />
+                                        <rect
+                                            x="2"
+                                            y="9"
+                                            width="4"
+                                            height="12"
+                                        />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span class="contact-card-label"
+                                        >LinkedIn</span
+                                    >
+                                    <p data-i18n="contact.linkedin"></p>
+                                </div>
+                                <span
+                                    class="contact-card-arrow"
+                                    aria-hidden="true"
+                                    >↗</span
+                                >
+                            </a>
+
+                            <a
+                                href="https://github.com/Diallojeannette"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-card contact-card--github"
+                            >
+                                <div class="contact-card-icon">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                                        />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg>
+                                </div>
+                                <div class="contact-card-text">
+                                    <span class="contact-card-label"
+                                        >GitHub</span
+                                    >
+                                    <p data-i18n="contact.github"></p>
+                                </div>
+                                <span
+                                    class="contact-card-arrow"
+                                    aria-hidden="true"
+                                    >↗</span
+                                >
+                            </a>
+                        </div>
+                        <!-- /.contact-cards -->
+                    </div>
+                    <!-- /.contact-inner -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p data-i18n="footer.copy"></p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
