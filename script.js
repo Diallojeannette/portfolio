@@ -47,7 +47,7 @@ const i18n = {
             "Vérification de la conformité des produits (quantité et qualité).",
 
         "exp.web.date": "Avr – Juin 2024",
-        "exp.web.company": "Rema TipTop, Guinée",
+        "exp.web.company": "Orange, Guinée",
         "exp.web.title": "Stage – Développement Web",
         "exp.web.b1":
             "Participation à la création de pages pour une plateforme interne de type bibliothèque numérique.",
@@ -151,7 +151,7 @@ const i18n = {
         "exp.stock.b4": "Verifying product compliance (quantity and quality).",
 
         "exp.web.date": "Apr – Jun 2024",
-        "exp.web.company": "Rema TipTop, Guinea",
+        "exp.web.company": "Orange Guinea",
         "exp.web.title": "Internship – Web Development",
         "exp.web.b1":
             "Contributed to building pages for an internal digital library platform.",
