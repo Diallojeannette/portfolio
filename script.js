@@ -151,7 +151,7 @@ const i18n = {
         "exp.stock.b4": "Verifying product compliance (quantity and quality).",
 
         "exp.web.date": "Apr – Jun 2024",
-        "exp.web.company": "Orange Guinea",
+        "exp.web.company": "Orange, Guinea",
         "exp.web.title": "Internship – Web Development",
         "exp.web.b1":
             "Contributed to building pages for an internal digital library platform.",
