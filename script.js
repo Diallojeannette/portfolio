@@ -113,7 +113,7 @@ const i18n = {
         "contact.location": "Kamsar, Guinée",
         "contact.linkedin": "Voir le profil LinkedIn",
         "contact.github": "Voir les projets GitHub",
-        "footer.copy": "© 2025 Jeannette Diallo · Tous droits réservés",
+        "footer.copy": "© 2026 Jeannette Diallo · Propulsons vos projets ensemble",
     },
 
     en: {
@@ -216,7 +216,7 @@ const i18n = {
         "contact.location": "Kamsar, Guinea",
         "contact.linkedin": "View LinkedIn profile",
         "contact.github": "View GitHub projects",
-        "footer.copy": "© 2025 Jeannette Diallo · All rights reserved",
+        "footer.copy": "© 2026 Jeannette Diallo · Let's build your next project together",
     },
 };
 
